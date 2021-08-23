@@ -24,24 +24,36 @@ const previousCalculations = JSON.parse(
 //retreiving history from local Storage
 
 window.addEventListener("DOMContentLoaded", () => {
-  previousCalculations.mixed.forEach((calculation) => {
-    setItem(0, calculation);
-  });
-  previousCalculations.addition.forEach((calculation) => {
-    setItem(1, calculation);
-  });
-  previousCalculations.subtraction.forEach((calculation) => {
-    setItem(2, calculation);
-  });
-  previousCalculations.multiplication.forEach((calculation) => {
-    setItem(3, calculation);
-  });
-  previousCalculations.division.forEach((calculation) => {
-    setItem(4, calculation);
-  });
-  previousCalculations.modulus.forEach((calculation) => {
-    setItem(5, calculation);
-  });
+  if (previousCalculations.mixed.length !== 0) {
+    previousCalculations.mixed.forEach((calculation) => {
+      setItem(0, calculation);
+    });
+  }
+  if (previousCalculations.addition.length !== 0) {
+    previousCalculations.addition.forEach((calculation) => {
+      setItem(1, calculation);
+    });
+  }
+  if (previousCalculations.subtraction.length !== 0) {
+    previousCalculations.subtraction.forEach((calculation) => {
+      setItem(2, calculation);
+    });
+  }
+  if (previousCalculations.multiplication.length !== 0) {
+    previousCalculations.multiplication.forEach((calculation) => {
+      setItem(3, calculation);
+    });
+  }
+  if (previousCalculations.division.length !== 0) {
+    previousCalculations.division.forEach((calculation) => {
+      setItem(4, calculation);
+    });
+  }
+  if (previousCalculations.modulus.length !== 0) {
+    previousCalculations.modulus.forEach((calculation) => {
+      setItem(5, calculation);
+    });
+  }
 });
 
 //calculator
