@@ -1,63 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- title -->
-    <title>Task1 - Calculator using HTML,CSS,JS</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--favicon-->
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <!-- title -->
+  <title>Task1 - Calculator using HTML,CSS,JS</title>
 
-    <!-- styles -->
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <main class="container">
-      <button class="btn history-btn">History</button>
-      <section class="alert">
-        <p class="alert-msg">Please Enter Some Value</p>
-      </section>
-      <section class="display">
-        <input type="text" class="display-input" />
-      </section>
-      <section class="btns">
-        <button class="btn calc-btn" value="1">1</button>
-        <button class="btn calc-btn" value="2">2</button>
-        <button class="btn calc-btn" value="3">3</button>
-        <button class="btn calc-btn" value="4">4</button>
-        <button class="btn calc-btn" value="5">5</button>
-        <button class="btn calc-btn" value="6">6</button>
-        <button class="btn calc-btn" value="7">7</button>
-        <button class="btn calc-btn" value="8">8</button>
-        <button class="btn calc-btn" value="9">9</button>
-        <button class="btn calc-btn" value="0">0</button>
-        <button class="btn calc-btn" value=".">.</button>
-        <button class="btn equal-btn" value="=">=</button>
-        <button class="btn del-btn">Delete</button>
-        <button class="btn calc-btn" value="+">+</button>
-        <button class="btn calc-btn" value="-">-</button>
-        <button class="btn calc-btn" value="*">*</button>
-        <button class="btn calc-btn" value="/">/</button>
-        <button class="btn calc-btn" value="%">%</button>
-      </section>
-      <section class="history">
-        <div class="head">
-          <h2>Previous Calculations</h2>
-          <img class="close-btn" src="./close.png" alt="close-btn" />
+  <!--favicon-->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+  <!-- styles -->
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <main class="container">
+    <button class="btn history-btn">History</button>
+    <section class="alert">
+      <p class="alert-msg"></p>
+    </section>
+    <section class="display">
+      <input type="text" class="display-input" />
+    </section>
+    <section class="btns">
+      <button class="btn calc-btn" value="1">1</button>
+      <button class="btn calc-btn" value="2">2</button>
+      <button class="btn calc-btn" value="3">3</button>
+      <button class="btn calc-btn" value="4">4</button>
+      <button class="btn calc-btn" value="5">5</button>
+      <button class="btn calc-btn" value="6">6</button>
+      <button class="btn calc-btn" value="7">7</button>
+      <button class="btn calc-btn" value="8">8</button>
+      <button class="btn calc-btn" value="9">9</button>
+      <button class="btn calc-btn" value="0">0</button>
+      <button class="btn calc-btn" value=".">.</button>
+      <button class="btn equal-btn" value="=">=</button>
+      <button class="btn del-btn">Delete</button>
+      <button class="btn calc-btn" value="+">+</button>
+      <button class="btn calc-btn" value="-">-</button>
+      <button class="btn calc-btn" value="*">*</button>
+      <button class="btn calc-btn" value="/">/</button>
+      <button class="btn calc-btn" value="%">%</button>
+    </section>
+    <section class="history">
+      <div class="head">
+        <h2>Previous Calculations</h2>
+        <img class="close-btn" src="./close.png" alt="close-btn" />
+      </div>
+      <div class="calculations">
+        <div class="cal MC">
+          <h1>Mixed Calculation</h1>
         </div>
-        <div class="calculations">
-          <div class="cal MC"><h1>Mixed Calculation</h1></div>
-          <div class="cal add"><h1>Addition</h1></div>
-          <div class="cal sub"><h1>Subtraction</h1></div>
-          <div class="cal mul"><h1>Multiplication</h1></div>
-          <div class="cal div"><h1>Division</h1></div>
-          <div class="cal mod"><h1>Modulus</h1></div>
+        <div class="cal add">
+          <h1>Addition</h1>
         </div>
-      </section>
-    </main>
-    <script src="./script.js"></script>
-  </body>
+        <div class="cal sub">
+          <h1>Subtraction</h1>
+        </div>
+        <div class="cal mul">
+          <h1>Multiplication</h1>
+        </div>
+        <div class="cal div">
+          <h1>Division</h1>
+        </div>
+        <div class="cal mod">
+          <h1>Modulus</h1>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+
 </html>
